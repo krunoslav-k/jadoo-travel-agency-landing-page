@@ -2,3 +2,46 @@
 @import "./base/typography";
 @import "./base/variables";
 @import "./base/mixins";
+
+body {
+  padding: 0 10%;
+}
+
+nav {
+  @include flex;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.main-links-list {
+  @include flex;
+  gap: 3rem;
+  list-style: none;
+}
+
+.main-links__link {
+  font-size: 1rem;
+  color: $color-gray-dark;
+  text-decoration: none;
+}
+
+.side-links-list {
+  @include flex;
+  gap: 1rem;
+  list-style: none;
+}
+
+.side-links__signup-button {
+  padding: 6px 21px;
+  border-radius: 5px;
+  border: 1px $color-gray-dark solid;
+  background-color: transparent;
+  font-size: 1rem;
+  font-family: "Open Sans";
+}
+
+.side-links__language-select {
+  font-size: 1rem;
+  color: $color-gray-dark;
+  border: none;
+}
