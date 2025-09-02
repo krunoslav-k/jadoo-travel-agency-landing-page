@@ -3,6 +3,7 @@
 @import "./base/variables";
 @import "./base/mixins";
 
+//HEADER
 body {
   padding: 0 10%;
 }
@@ -45,3 +46,5 @@ nav {
   color: $color-gray-dark;
   border: none;
 }
+
+//HERO SECTION
