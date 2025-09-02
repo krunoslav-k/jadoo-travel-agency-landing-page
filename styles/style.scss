@@ -48,3 +48,41 @@ nav {
 }
 
 //HERO SECTION
+.hero-section {
+  @include flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.hero__content__tagline {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: bold;
+  color: $color-orange-warm;
+}
+
+.hero__content__heading {
+  font-family: "Volkhov";
+  font-size: 84px;
+  font-weight: bold;
+  letter-spacing: -4%;
+  line-height: 89px;
+  color: $color-blue-dark;
+}
+
+.hero__image-wrapper {
+  height: 764px;
+  width: 100%;
+  overflow: hidden;
+  background-image: url("../assets/images/girl-on-travel.png");
+  background-size: cover; /* ili contain */
+  background-position: center;
+  background-repeat: no-repeat;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
