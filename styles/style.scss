@@ -55,6 +55,7 @@ nav {
 }
 
 .hero__content__tagline {
+  margin-bottom: 1rem;
   font-family: "Poppins";
   font-size: 20px;
   font-weight: bold;
@@ -62,6 +63,7 @@ nav {
 }
 
 .hero__content__heading {
+  position: relative;
   font-family: "Volkhov";
   font-size: 84px;
   font-weight: bold;
@@ -70,14 +72,17 @@ nav {
   color: $color-blue-dark;
 }
 
+.hero__content__heading__text-underline-decor {
+  position: absolute;
+  top: 70px;
+  left: 280px;
+  z-index: -1;
+}
+
 .hero__image-wrapper {
   height: 764px;
   width: 100%;
   overflow: hidden;
-  background-image: url("../assets/images/girl-on-travel.png");
-  background-size: cover; /* ili contain */
-  background-position: center;
-  background-repeat: no-repeat;
 
   img {
     width: 100%;
