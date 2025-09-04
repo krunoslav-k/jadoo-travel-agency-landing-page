@@ -3,10 +3,25 @@
 @import "./base/variables";
 @import "./base/mixins";
 
-//HEADER
 body {
   padding: 0 10%;
 }
+
+.corner-decoration {
+  position: absolute;
+  top: 0px;
+  z-index: -2;
+}
+
+.left-corner-decoration {
+  left: 0px;
+}
+
+.right-corner-decoration {
+  right: 0px;
+}
+
+//HEADER
 
 nav {
   @include flex;
@@ -28,7 +43,7 @@ nav {
 
 .side-links-list {
   @include flex;
-  gap: 1rem;
+  gap: 2rem;
   list-style: none;
 }
 
@@ -44,6 +59,7 @@ nav {
 .side-links__language-select {
   font-size: 1rem;
   color: $color-gray-dark;
+  background-color: transparent;
   border: none;
 }
 

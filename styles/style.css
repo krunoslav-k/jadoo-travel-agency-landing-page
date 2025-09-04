@@ -14,6 +14,20 @@ body {
   padding: 0 10%;
 }
 
+.corner-decoration {
+  position: absolute;
+  top: 0px;
+  z-index: -2;
+}
+
+.left-corner-decoration {
+  left: 0px;
+}
+
+.right-corner-decoration {
+  right: 0px;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -43,7 +57,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  gap: 2rem;
   list-style: none;
 }
 
@@ -59,6 +73,7 @@ nav {
 .side-links__language-select {
   font-size: 1rem;
   color: #404040;
+  background-color: transparent;
   border: none;
 }
 
