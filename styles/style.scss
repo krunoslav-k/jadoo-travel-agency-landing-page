@@ -95,6 +95,74 @@ nav {
   z-index: -1;
 }
 
+.hero__content__description {
+  margin-top: 1.5rem;
+  font-family: "Poppins";
+  font-size: 0.94rem;
+  color: $color-blue-gray;
+  line-height: 30px;
+}
+
+.hero__content__cta-wrapper {
+  @include flex;
+  justify-content: flex-start;
+  gap: 3rem;
+  margin-top: 1.8rem;
+}
+
+.hero__content__cta-button--more {
+  padding: 1rem 1.44rem;
+  font-family: "Open Sans";
+  font-size: 1.06rem;
+  color: $color-white;
+  border: none;
+  border-radius: 10px;
+  background-color: $color-yellow;
+  box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
+  cursor: pointer;
+}
+
+.hero__content__cta-button--play-demo-wrapper {
+  @include flex;
+  gap: 0.75rem;
+}
+
+.hero__content__cta-button--play-demo {
+  font-family: "Poppins";
+  font-size: 1rem;
+  color: $color-gray-medium;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.play-button {
+  width: 52px;
+  height: 52px;
+  background: $color-orange-warm;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  box-shadow: 0 20px 35px rgba(223, 105, 81, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease;
+}
+
+.play-button::before {
+  content: "";
+  position: absolute;
+  left: 21px;
+  top: 17px;
+  width: 0;
+  height: 0;
+  border-left: 14px solid white;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+}
+
 .hero__image-wrapper {
   height: 764px;
   width: 100%;
