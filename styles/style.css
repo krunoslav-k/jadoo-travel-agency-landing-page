@@ -10,6 +10,20 @@ body {
   font-size: 17px;
 }
 
+.heading {
+  font-size: 2.95rem;
+  font-family: "Volkhov";
+  font-weight: bold;
+  color: #14183e;
+}
+
+.heading-label {
+  font-size: 1.05rem;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: #5e6282;
+}
+
 body {
   padding: 0 10%;
 }
@@ -206,19 +220,8 @@ nav {
   margin-bottom: 4rem;
 }
 
-.services__heading-label {
-  font-size: 1.05rem;
-  font-family: "Poppins";
-  font-weight: 600;
-  color: #5e6282;
-}
-
 .services__heading {
   margin-top: 1rem;
-  font-size: 2.95rem;
-  font-family: "Volkhov";
-  font-weight: bold;
-  color: #14183e;
 }
 
 .services__cards-container {
@@ -273,4 +276,23 @@ nav {
   font-family: "Poppins";
   color: #5e6282;
   line-height: 26px;
+}
+
+.destinations-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.destinations__cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.destination__card__image {
+  width: 100px;
+  height: 100px;
 }/*# sourceMappingURL=style.css.map */

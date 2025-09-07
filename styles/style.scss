@@ -237,3 +237,18 @@ nav {
   color: $color-blue-gray;
   line-height: 26px;
 }
+
+//DESTINATIONS SECTION
+
+.destinations-section {
+  @include flex(column);
+}
+
+.destinations__cards-container {
+  @include flex(row);
+}
+
+.destination__card__image {
+  width: 100px;
+  height: 100px;
+}
