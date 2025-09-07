@@ -4,3 +4,17 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 17px;
 }
+
+.heading {
+  font-size: 2.95rem;
+  font-family: "Volkhov";
+  font-weight: bold;
+  color: $color-navy-dark;
+}
+
+.heading-label {
+  font-size: 1.05rem;
+  font-family: "Poppins";
+  font-weight: 600;
+  color: $color-blue-gray;
+}
