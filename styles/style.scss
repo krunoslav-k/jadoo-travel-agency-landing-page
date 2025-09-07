@@ -180,6 +180,7 @@ nav {
 
 .services-section {
   @include flex(column);
+  margin-bottom: 4rem;
 }
 
 .services__heading-label {
