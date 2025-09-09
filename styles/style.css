@@ -334,4 +334,45 @@ nav {
   margin-right: 10px;
   background: url("../assets/icons/navigation-icon.svg") no-repeat center;
   background-size: contain;
+}
+
+.booking-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8rem;
+}
+
+.booking__steps__heading-label {
+  margin-left: 6px;
+}
+
+.booking__steps__heading {
+  margin-top: 0.5rem;
+}
+
+.booking__steps__step-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 21px;
+  width: 70%;
+  margin-top: 2rem;
+}
+
+.booking__steps__step-label,
+.booking__steps__step-description {
+  font-size: 0.95rem;
+  font-family: "Poppins";
+  color: #5e6282;
+}
+
+.booking__steps__step-label {
+  font-weight: bold;
+}
+
+.booking__preview {
+  width: 50%;
 }/*# sourceMappingURL=style.css.map */

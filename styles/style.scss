@@ -288,3 +288,40 @@ nav {
     background-size: contain;
   }
 }
+
+//BOOKING SECTION
+
+.booking-section {
+  @include flex(row, space-between);
+  margin-top: 8rem;
+}
+
+.booking__steps__heading-label {
+  margin-left: 6px;
+}
+
+.booking__steps__heading {
+  margin-top: 0.5rem;
+}
+
+.booking__steps__step-wrapper {
+  @include flex(row, flex-start);
+  gap: 21px;
+  width: 70%;
+  margin-top: 2rem;
+}
+
+.booking__steps__step-label,
+.booking__steps__step-description {
+  font-size: 0.95rem;
+  font-family: "Poppins";
+  color: $color-blue-gray;
+}
+
+.booking__steps__step-label {
+  font-weight: bold;
+}
+
+.booking__preview {
+  width: 50%;
+}
