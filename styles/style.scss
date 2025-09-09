@@ -325,3 +325,123 @@ nav {
 .booking__preview {
   width: 50%;
 }
+
+.booking__preview__trip-card {
+  width: 70%;
+  padding: 20px 25px;
+  border-radius: 26px;
+  background-color: $color-white;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+}
+
+.booking__preview__trip-card__image {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 1rem;
+  border-radius: 18px;
+}
+
+.booking__preview__trip-card__name {
+  margin-bottom: 0.6rem;
+  font-size: 1.05rem;
+  font-family: "Poppins";
+  color: $color-black;
+  letter-spacing: 1.5%;
+}
+
+.booking__preview__trip-card__details {
+  margin-bottom: 0.8rem;
+  font-size: 0.95rem;
+  font-family: "Poppins";
+  color: $color-medium-blue-gray;
+  letter-spacing: -0.5%;
+}
+
+.booking__preview__trip-card__action-buttons-wrapper {
+  @include flex(row, flex-start);
+  gap: 14px;
+  margin-bottom: 1rem;
+}
+
+.booking__preview__trip-card__action-button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.booking__preview__trip-card__footer {
+  @extend .booking__preview__trip-card__details;
+  margin-bottom: 0;
+  letter-spacing: -2%;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    background-image: url("../assets/icons/building-icon.svg");
+    background-size: contain;
+  }
+}
+
+.booking__preview__mini-trip-card {
+  @extend .booking__preview__trip-card;
+  @include flex(row, space-evenly, flex-start);
+  width: 55%;
+  padding: 16px;
+}
+
+.booking__preview__mini-trip-card__image-wrapper {
+  @include flex;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.booking__preview__mini-trip-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.booking__preview__mini-trip-card__details__status {
+  margin-bottom: 0.2rem;
+  font-size: 0.82rem;
+  font-family: "Poppins";
+  color: $color-medium-blue-gray;
+  letter-spacing: -3.5%;
+}
+
+.booking__preview__mini-trip-card__details__name {
+  @extend .booking__preview__trip-card__name;
+  margin-bottom: 0.4rem;
+  letter-spacing: -1.5%;
+}
+
+.booking__preview__mini-trip-card__details__progress-text {
+  @extend .booking__preview__mini-trip-card__details__status;
+  margin-bottom: 0.3rem;
+  letter-spacing: -5.5%;
+}
+
+.booking__preview__mini-trip-card__details__progress-text--accent {
+  color: $color-purple;
+}
+
+.booking__preview__mini-trip-card__details__progress-bar {
+  width: 100%;
+  height: 5px;
+  background: #eee;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.booking__preview__mini-trip-card__details__progress-bar--filled {
+  width: 40%;
+  height: 100%;
+  background: $color-purple;
+  border-radius: inherit;
+  transition: width 0.3s ease;
+}
