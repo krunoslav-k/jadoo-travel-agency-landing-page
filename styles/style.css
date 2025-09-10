@@ -381,6 +381,8 @@ nav {
   width: 70%;
   padding: 20px 25px;
   border-radius: 26px;
+  position: relative;
+  top: 100px;
   background-color: #ffffff;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
 }
@@ -444,6 +446,10 @@ nav {
   align-items: flex-start;
   width: 55%;
   padding: 16px;
+  border-radius: 14px;
+  position: relative;
+  top: -70px;
+  right: -210px;
 }
 
 .booking__preview__mini-trip-card__image-wrapper {
