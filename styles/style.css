@@ -506,4 +506,59 @@ nav {
   background: #8a79df;
   border-radius: inherit;
   transition: width 0.3s ease;
+}
+
+.testimonials-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-items: flex-start;
+  margin-top: 8rem;
+}
+
+.testimonials__heading-container {
+  flex: 1.25;
+}
+
+.testimonials__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+}
+
+.testimonials__slider__card {
+  width: 80%;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
+  font-family: "Poppins";
+  line-height: 32px;
+  color: #5e6282;
+}
+
+.testimonials__slider__card__description {
+  font-size: 0.95rem;
+}
+
+.testimonials__slider__card__user-name {
+  margin-top: 1.2rem;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.testimonials__slider__card__user-location {
+  margin-top: -3px;
+  font-size: 0.82rem;
+}
+
+.testimonials__arrow {
+  font-family: "Poppins";
+  font-size: 3rem;
+  background-color: transparent;
+  border: none;
+  rotate: 90deg;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
