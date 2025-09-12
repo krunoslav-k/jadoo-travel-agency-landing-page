@@ -561,4 +561,27 @@ nav {
   border: none;
   rotate: 90deg;
   cursor: pointer;
+}
+
+.partners-logos-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 6rem;
+}
+
+.partner-logo-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  height: 90px;
+  border-radius: 10px;
+}
+
+.partner-logo {
+  max-width: 70%;
+  height: auto;
 }/*# sourceMappingURL=style.css.map */
