@@ -529,6 +529,7 @@ nav {
   padding: 4rem 5rem;
   background-color: $color-light-purple;
   border-radius: 130px 20px 20px 20px;
+  position: relative;
 }
 
 .subscribe__description {
@@ -591,4 +592,23 @@ nav {
     rgba(255, 125, 104, 1) 100%
   );
   cursor: pointer;
+}
+
+.subscribe__decoration-icon {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+}
+
+.subscribe__decoration-img-left {
+  position: absolute;
+  bottom: 0;
+  left: -80px;
+  z-index: -1;
+}
+
+.subscribe__decoration-img-right {
+  position: absolute;
+  top: 0;
+  right: 0;
 }

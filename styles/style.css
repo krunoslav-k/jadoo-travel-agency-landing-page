@@ -591,6 +591,7 @@ nav {
   padding: 4rem 5rem;
   background-color: rgba(223, 215, 249, 0.2);
   border-radius: 130px 20px 20px 20px;
+  position: relative;
 }
 
 .subscribe__description {
@@ -657,4 +658,23 @@ nav {
   background: #ff946d;
   background: linear-gradient(180deg, rgb(255, 148, 109) 0%, rgb(255, 125, 104) 100%);
   cursor: pointer;
+}
+
+.subscribe__decoration-icon {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+}
+
+.subscribe__decoration-img-left {
+  position: absolute;
+  bottom: 0;
+  left: -80px;
+  z-index: -1;
+}
+
+.subscribe__decoration-img-right {
+  position: absolute;
+  top: 0;
+  right: 0;
 }/*# sourceMappingURL=style.css.map */
