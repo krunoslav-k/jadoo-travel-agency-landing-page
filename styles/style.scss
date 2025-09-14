@@ -469,6 +469,22 @@ nav {
   flex: 2;
 }
 
+.testimonals__paginations-dots-wrapper {
+  @include flex(column);
+  gap: 1.2rem;
+}
+
+.testimonials__pagination-dot {
+  width: 6px;
+  height: 6px;
+  opacity: 0.3;
+  transition: opacity 0.4s ease;
+
+  &.active {
+    opacity: 1;
+  }
+}
+
 .testimonials__slider {
   position: relative;
   width: 80%;
@@ -525,6 +541,10 @@ nav {
 .testimonials__slider__card__user-location {
   margin-top: -3px;
   font-size: 0.82rem;
+}
+
+.testimonials__buttons-wrapper {
+  @include flex(column);
 }
 
 .testimonials__arrow {

@@ -529,6 +529,24 @@ nav {
   flex: 2;
 }
 
+.testimonals__paginations-dots-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.testimonials__pagination-dot {
+  width: 6px;
+  height: 6px;
+  opacity: 0.3;
+  transition: opacity 0.4s ease;
+}
+.testimonials__pagination-dot.active {
+  opacity: 1;
+}
+
 .testimonials__slider {
   position: relative;
   width: 80%;
@@ -581,6 +599,13 @@ nav {
 .testimonials__slider__card__user-location {
   margin-top: -3px;
   font-size: 0.82rem;
+}
+
+.testimonials__buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .testimonials__arrow {
