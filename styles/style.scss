@@ -612,3 +612,89 @@ nav {
   top: 0;
   right: 0;
 }
+
+//FOOTER
+
+footer {
+  @include flex(column);
+  margin-top: 4rem;
+}
+
+.footer-container {
+  @include flex(row, space-between, flex-start);
+  width: 100%;
+}
+
+.footer__company__logo {
+  font-family: "Poppins";
+  font-size: 44px;
+  font-weight: 500;
+  color: $color-blue-dark;
+}
+
+.footer__company__description {
+  font-family: "Poppins";
+  font-size: 0.77rem;
+  line-height: 124.5%;
+  color: $color-blue-gray;
+}
+
+.footer-nav {
+  @include flex;
+  width: 60%;
+  justify-content: space-evenly;
+}
+
+.footer-nav-links {
+  list-style: none;
+
+  li:first-child {
+    margin-bottom: 1.2rem;
+  }
+
+  li {
+    margin-top: 0.65rem;
+  }
+}
+
+.footer-nav-link {
+  font-family: "Poppins";
+  font-size: 1.05rem;
+  line-height: 124.5%;
+  color: $color-blue-gray;
+  text-decoration: none;
+}
+
+.label-link {
+  margin-bottom: 1rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: black;
+}
+
+.footer__outbound__wrapper {
+  @include flex;
+  align-items: start;
+}
+
+.footer__outbound__discover-text {
+  margin-bottom: 0.75rem;
+  font-family: "Poppins";
+  font-size: 1.18rem;
+  letter-spacing: 0.5%;
+  line-height: 124.5%;
+  color: $color-blue-gray;
+}
+
+.footer__outbound__discover-icons-wrapper {
+  @include flex;
+  gap: 8px;
+}
+
+.footer__copyright {
+  margin-block: 3rem;
+  font-family: "Poppins";
+  font-size: 0.82rem;
+  line-height: 124.5%;
+  color: $color-blue-gray;
+}
