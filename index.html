@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./scripts/main.js" defer></script>
     <title>Jadoo</title>
   </head>
   <body>
@@ -351,8 +352,9 @@
           <div class="testimonials__paginations-dot"></div>
           <div class="testimonials__paginations-dot"></div>
         </div>
+
         <div class="testimonials__slider">
-          <div class="testimonials__slider__card">
+          <div class="testimonials__slider__card prev">
             <p class="testimonials__slider__card__description">
               "The entire journey was flawlessly organized from start to finish.
               The agency handled flights, accommodation, and local tours with
@@ -366,7 +368,7 @@
             </p>
           </div>
 
-          <div class="testimonials__slider__card">
+          <div class="testimonials__slider__card active">
             <p class="testimonials__slider__card__description">
               "I was amazed by the level of personal care the team provided.
               They customized the itinerary exactly to my preferences and even
@@ -377,7 +379,7 @@
             <p class="testimonials__slider__card__user-location">Rome, Italy</p>
           </div>
 
-          <div class="testimonials__slider__card">
+          <div class="testimonials__slider__card next">
             <p class="testimonials__slider__card__description">
               "Booking through this agency was one of the best travel decisions
               I’ve made. The prices were surprisingly affordable, yet the
@@ -391,12 +393,21 @@
             </p>
           </div>
         </div>
+
         <div class="testimonials__buttons-wrapper">
-          <button class="testimonials__arrow testimonials__arrow--prev">
-            &lt;
+          <button class="testimonials__arrow" id="prev">
+            <img
+              src="./assets/icons/arrow-icon.svg"
+              alt="arrow icon"
+              class="testimonials__arrow--prev"
+            />
           </button>
-          <button class="testimonials__arrow testimonials__arrow--next">
-            &gt;
+          <button class="testimonials__arrow" id="next">
+            <img
+              src="./assets/icons/arrow-icon.svg"
+              alt="arrow icon"
+              class="testimonials__arrow--next"
+            />
           </button>
         </div>
       </div>

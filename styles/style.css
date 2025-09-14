@@ -529,14 +529,43 @@ nav {
   flex: 2;
 }
 
-.testimonials__slider__card {
+.testimonials__slider {
+  position: relative;
   width: 80%;
+  height: 400px;
+  margin: 0 auto;
+  overflow: visible;
+}
+
+.testimonials__slider__card {
+  position: absolute;
+  width: 100%;
   padding: 2rem;
   border-radius: 10px;
   box-shadow: 0 12px 40px rgba(0, 0, 0, 0.06);
   font-family: "Poppins";
   line-height: 32px;
   color: #5e6282;
+  background-color: #fff;
+  transition: transform 0.5s ease, opacity 0.5s ease, z-index 0.5s;
+  opacity: 0.7;
+  transform: scale(0.8) translateY(50px);
+  z-index: 1;
+}
+.testimonials__slider__card.active {
+  opacity: 1;
+  transform: scale(1) translateY(0);
+  z-index: 5;
+}
+.testimonials__slider__card.prev {
+  opacity: 0.7;
+  transform: scale(0.9) translateY(-70px);
+  z-index: 3;
+}
+.testimonials__slider__card.next {
+  opacity: 0.7;
+  transform: scale(0.9) translateY(80px);
+  z-index: 3;
 }
 
 .testimonials__slider__card__description {
@@ -559,8 +588,11 @@ nav {
   font-size: 3rem;
   background-color: transparent;
   border: none;
-  rotate: 90deg;
   cursor: pointer;
+}
+
+.testimonials__arrow--prev {
+  rotate: 180deg;
 }
 
 .partners-logos-container {
