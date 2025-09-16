@@ -55,6 +55,13 @@ nav {
   padding-top: 2rem;
 }
 
+.main-logo {
+  transition: all 0.5s ease;
+}
+.main-logo:hover {
+  transform: scale(1.15);
+}
+
 .main-links-list {
   display: flex;
   flex-direction: row;
@@ -65,9 +72,15 @@ nav {
 }
 
 .main-links__link {
+  display: inline-block;
   font-size: 1rem;
   color: #404040;
   text-decoration: none;
+  transition: all 0.3s ease;
+}
+.main-links__link:hover {
+  transform: scale(1.1);
+  font-weight: 600;
 }
 
 .side-links-list {
@@ -86,13 +99,28 @@ nav {
   background-color: transparent;
   font-size: 1rem;
   font-family: "Open Sans";
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.side-links__signup-button:hover {
+  color: #ffffff;
+  background-color: #df6951;
+  border: 1px transparent solid;
 }
 
 .side-links__language-select {
+  padding: 6.5px 10px;
+  border-radius: 5px;
   font-size: 1rem;
   color: #404040;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.side-links__language-select:hover {
+  color: #ffffff;
+  background-color: #df6951;
 }
 
 .hero-section {

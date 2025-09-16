@@ -29,6 +29,14 @@ nav {
   padding-top: 2rem;
 }
 
+.main-logo {
+  transition: all 0.5s ease;
+
+  &:hover {
+    transform: scale(1.15);
+  }
+}
+
 .main-links-list {
   @include flex;
   gap: 3rem;
@@ -36,9 +44,16 @@ nav {
 }
 
 .main-links__link {
+  display: inline-block;
   font-size: 1rem;
   color: $color-gray-dark;
   text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    transform: scale(1.1);
+    font-weight: 600;
+  }
 }
 
 .side-links-list {
@@ -54,13 +69,30 @@ nav {
   background-color: transparent;
   font-size: 1rem;
   font-family: "Open Sans";
+  cursor: pointer;
+  transition: 0.4s ease;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-orange-warm;
+    border: 1px transparent solid;
+  }
 }
 
 .side-links__language-select {
+  padding: 6.5px 10px;
+  border-radius: 5px;
   font-size: 1rem;
   color: $color-gray-dark;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+  transition: 0.4s ease;
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-orange-warm;
+  }
 }
 
 //HERO SECTION
