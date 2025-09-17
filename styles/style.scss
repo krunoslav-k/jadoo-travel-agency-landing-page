@@ -152,11 +152,30 @@ nav {
   background-color: $color-yellow;
   box-shadow: 0px 20px 35px 0px rgba(241, 165, 1, 0.15);
   cursor: pointer;
+  transition: 0.4s ease;
+
+  &:hover {
+    transform: scale(1.025);
+    box-shadow: 0px 20px 35px rgba(239, 137, 48, 0.25);
+    background-color: $color-yellowish-orange;
+  }
 }
 
 .hero__content__cta-button--play-demo-wrapper {
   @include flex;
   gap: 0.75rem;
+
+  &:hover {
+    .hero__content__cta-button--play-demo {
+      transform: scale(1.025);
+    }
+
+    .play-button {
+      transform: scale(1.05);
+      box-shadow: 0px 20px 35px rgba(239, 137, 48, 0.25);
+      background-color: $color-yellowish-orange;
+    }
+  }
 }
 
 .hero__content__cta-button--play-demo {
@@ -166,6 +185,7 @@ nav {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  transition: 0.5s ease;
 }
 
 .play-button {
@@ -180,7 +200,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.2s ease;
+  transition: 0.5s ease;
 }
 
 .play-button::before {
