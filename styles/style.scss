@@ -235,9 +235,6 @@ nav {
   margin-bottom: 4rem;
 }
 
-.services__heading-label {
-}
-
 .services__heading {
   margin-top: 1rem;
 }
@@ -251,11 +248,18 @@ nav {
 .services__card {
   @include flex(column);
   justify-content: space-evenly;
-  width: 267px;
-  padding: 2rem;
+  width: 240px;
+  height: 300px;
+  padding: 2rem 1.5rem;
   box-sizing: border-box;
   border-radius: 36px;
   background-color: $color-white;
+  transition: 0.33s ease;
+  text-align: center;
+
+  &:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05), 0 16px 40px rgba(0, 0, 0, 0.02);
+  }
 }
 
 .services__card__icon-wrapper {
@@ -308,6 +312,16 @@ nav {
   width: 315px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 0 8px 16px rgba(0, 0, 0, 0.15);
   background: $color-white;
+  transition: 0.4s ease;
+
+  &:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12), 0 12px 24px rgba(0, 0, 0, 0.2);
+    transform: translateY(-4px);
+  }
+
+  &:hover img {
+    transform: scale(1.03) translateY(-4px);
+  }
 }
 
 .destinations__card__image {
@@ -315,6 +329,7 @@ nav {
   height: 330px;
   object-fit: cover;
   display: block;
+  transition: transform 0.4s ease;
 }
 
 .destinations__card__city-and-price-wrapper {
