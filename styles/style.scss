@@ -643,6 +643,15 @@ nav {
 .partner-logo {
   max-width: 70%;
   height: auto;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: filter 0.4s ease, opacity 0.4s ease, transform 0.4s ease;
+
+  &:hover {
+    transform: scale(1.15);
+    filter: grayscale(0%);
+    opacity: 1;
+  }
 }
 
 //SUBSCRIBE CONTAINER
