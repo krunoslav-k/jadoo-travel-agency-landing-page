@@ -724,6 +724,16 @@ nav {
     rgba(255, 125, 104, 1) 100%
   );
   cursor: pointer;
+  transition: all 0.35s ease;
+
+  &:hover {
+    transform: translateY(-1px) scale(1.03);
+    background: linear-gradient(
+      180deg,
+      rgba(230, 99, 70, 0.875) 0%,
+      rgba(200, 81, 60, 0.884) 100%
+    );
+  }
 }
 
 .subscribe__decoration-icon {
@@ -807,6 +817,11 @@ footer {
 .footer__outbound__wrapper {
   @include flex;
   align-items: start;
+}
+
+.footer__outbound__social-icon,
+.footer__outbound__discover-icon {
+  cursor: pointer;
 }
 
 .footer__outbound__discover-text {
