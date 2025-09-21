@@ -5,11 +5,13 @@
 
 body {
   padding: 0 10%;
+  width: 100vw;
 }
 
 .corner-decoration {
   position: absolute;
   top: 0px;
+  right: 0px;
   z-index: -2;
 }
 
@@ -93,6 +95,35 @@ nav {
     color: $color-white;
     background-color: $color-orange-warm;
   }
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 1rem;
+  cursor: pointer;
+
+  span {
+    display: block;
+    height: 3px;
+    background: $color-blue-gray;
+    border-radius: 2px;
+    transition: 0.3s;
+  }
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 //HERO SECTION
@@ -850,3 +881,5 @@ footer {
   line-height: 124.5%;
   color: $color-blue-gray;
 }
+
+@import "./base/responsive";

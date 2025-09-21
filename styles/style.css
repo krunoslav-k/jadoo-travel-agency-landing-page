@@ -30,11 +30,13 @@ body {
 
 body {
   padding: 0 10%;
+  width: 100vw;
 }
 
 .corner-decoration {
   position: absolute;
   top: 0px;
+  right: 0px;
   z-index: -2;
 }
 
@@ -121,6 +123,34 @@ nav {
 .side-links__language-select:hover {
   color: #ffffff;
   background-color: #df6951;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 1rem;
+  cursor: pointer;
+}
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: #5e6282;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
 }
 
 .hero-section {
@@ -916,4 +946,27 @@ footer {
   font-size: 0.82rem;
   line-height: 124.5%;
   color: #5e6282;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+  .main-links-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: #fff;
+    padding: 1rem 0;
+    transform: translateY(-200%);
+    transition: transform 0.3s ease;
+  }
+  .nav__links.active {
+    transform: translateY(0);
+  }
+  .hamburger {
+    display: flex;
+  }
 }/*# sourceMappingURL=style.css.map */

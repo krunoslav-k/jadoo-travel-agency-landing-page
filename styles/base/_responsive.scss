@@ -1,0 +1,28 @@
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  .main-links-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background: #fff;
+    padding: 1rem 0;
+    transform: translateY(-200%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav__links.active {
+    transform: translateY(0);
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 480px) {
+}

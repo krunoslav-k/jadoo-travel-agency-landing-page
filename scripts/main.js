@@ -4,6 +4,8 @@ const paginationDots = document.querySelectorAll(
 );
 const prevBtn = document.getElementById("prev");
 const nextBtn = document.getElementById("next");
+const hamburger = document.querySelector(".hamburger");
+const navLinks = document.querySelector(".main-links-list");
 
 let current = 0;
 
@@ -47,3 +49,8 @@ nextBtn.addEventListener("click", () => {
 
 updateCards();
 updateDots();
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+  hamburger.classList.toggle("open");
+});
