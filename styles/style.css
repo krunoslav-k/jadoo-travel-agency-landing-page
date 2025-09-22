@@ -311,6 +311,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-top: 2.6rem;
 }
@@ -378,6 +379,7 @@ nav {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 40px;
   margin-top: 3.5rem;
 }
@@ -438,6 +440,7 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   margin-top: 8rem;
 }
 
@@ -611,6 +614,7 @@ nav {
   justify-content: center;
   align-items: center;
   align-items: flex-start;
+  flex-wrap: wrap;
   margin-top: 8rem;
 }
 
@@ -968,5 +972,8 @@ footer {
   }
   .hamburger {
     display: flex;
+  }
+  .hero__image-wrapper {
+    transform: scale(1);
   }
 }/*# sourceMappingURL=style.css.map */

@@ -277,6 +277,7 @@ nav {
 
 .services__cards-container {
   @include flex;
+  flex-wrap: wrap;
   gap: 1rem;
   margin-top: 2.6rem;
 }
@@ -338,6 +339,7 @@ nav {
 
 .destinations__cards-container {
   @include flex(row);
+  flex-wrap: wrap;
   gap: 40px;
   margin-top: 3.5rem;
 }
@@ -396,6 +398,7 @@ nav {
 
 .booking-section {
   @include flex(row, space-between);
+  flex-wrap: wrap;
   margin-top: 8rem;
 }
 
@@ -560,6 +563,7 @@ nav {
 .testimonials-section {
   @include flex;
   align-items: flex-start;
+  flex-wrap: wrap;
   margin-top: 8rem;
 }
 

@@ -22,6 +22,10 @@
   .hamburger {
     display: flex;
   }
+
+  .hero__image-wrapper {
+    transform: scale(1);
+  }
 }
 
 @media screen and (max-width: 480px) {
